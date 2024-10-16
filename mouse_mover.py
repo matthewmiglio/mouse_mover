@@ -46,7 +46,7 @@ while time.time() - start_time < run_duration:
     y = random.randint(0, screen_height - 1)
 
     # Move the mouse to the random coordinates
-    pyautogui.moveTo(x, y, duration=0.1)  # Smooth movement over 0.5 seconds
+    pyautogui.moveTo(x, y, duration=0.6)  # Smooth movement over 0.5 seconds
 
     # Wait for 10 seconds before the next move
     time.sleep(random.randint(20,30))
