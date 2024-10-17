@@ -42,7 +42,7 @@ while time.time() - start_time < run_duration:
     screen_width, screen_height = pyautogui.size()
     x = random.randint(0, screen_width - 1)
     y = random.randint(0, screen_height - 1)
-    pyautogui.moveTo(x, y, duration=0.6)
+    pyautogui.moveTo(x, y, duration=0.2)
     time.sleep(random.randint(20, 30))
 
 print("Finished moving the mouse.")
