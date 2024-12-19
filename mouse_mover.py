@@ -44,8 +44,7 @@ def calc_new_pos(screen_width, screen_height):
     return new_x, new_y
 
 
-def main():
-
+def move_mouse_for_input_time():
     run_hours = get_hours_input()
     run_duration = run_hours * 60 * 60
     start_time = time.time()
@@ -59,6 +58,9 @@ def main():
 
     print("Finished moving the mouse.")
 
+def main():
+    while 1:
+        move_mouse_for_input_time()
 
 if __name__ == "__main__":
     main()
